@@ -17,13 +17,15 @@ def setup():
     global y
     x = None
     y = None
+    global hasclicked
+    hasclicked = False
     
     noStroke()
     
 def draw():
     global x
     global y
-    
+    global hasclicked
     # 1. Use the background() function to draw the donkey
 
     # 2. Use the rect() function to draw a box in the upper left
@@ -66,5 +68,6 @@ def draw():
         
     # 8. When the tail has been pinned, write code to check if the
     # tail was pinned inside the target bounding box.
-    
+    if x > 700 and < 650:
+        image(tail, x, y)
     # 9. Show the donkey so the user knows where they pinned the tail.
