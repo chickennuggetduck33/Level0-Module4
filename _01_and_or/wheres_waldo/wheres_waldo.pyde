@@ -12,20 +12,20 @@ def setup():
     # Find a Where's Waldo picture and drop it onto the sketch.
     
     # Change the line below to match your file name.
-    waldo = loadImage("waldo.jpg")
+    waldo = loadImage("waldo.jpeg")
     
     # Use the size() function to set the width and height of your sketch
-
+    size(500, 500)
     # Resize your waldo picture to the same size as the sketch
-
+    waldo.resize(500, 500)
     # Use the background() function to make the waldo image your
     # sketch background
-
+    background(waldo)
     
 def draw():
     # If the user presses the mouse...
     # *Hint* use the mousePressed variable
-  
+    rect(200, 350, 50, 50)
         # Use this print statement to help you find the location
         # of Waldo to use in the code below
     

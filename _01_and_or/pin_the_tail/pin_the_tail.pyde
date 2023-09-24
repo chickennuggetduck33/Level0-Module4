@@ -68,6 +68,10 @@ def draw():
         
     # 8. When the tail has been pinned, write code to check if the
     # tail was pinned inside the target bounding box.
-    if x > 700 and < 650:
-        image(tail, x, y)
+    if x > 700 and x < 650 and y > 150 and y < 200:
+        pass
+        
     # 9. Show the donkey so the user knows where they pinned the tail.
+    if hasclicked == True:
+        background(donkey)
+        image(tail, x, y)
