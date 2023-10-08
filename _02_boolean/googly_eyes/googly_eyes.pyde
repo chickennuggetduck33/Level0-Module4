@@ -10,19 +10,19 @@ You’re going to draw a face with eyes that will follow the mouse!
 def setup():
     # 2. Import your image using the following code:
     #global face
-    #face = loadImage("big_eye_bird.png")
+    face = loadImage("big eyes.jpeg")
 
     
     # 3. Set the size of your sketch and the size of your image to be
     # the same by entering the following code in the setup method.
-    #size(800, 800)
-    #face.resize(width, height)
+    size(800, 800)
+    face.resize(width, height)
 
     
 def draw():
     # 4. Draw your image using:
-    #global face
-    #background(face)
+    global face
+    background(face)
 
     # 5. Place a white circle over the left eye of your image.
     # *HINT* The current position of the mouse is printed to the
