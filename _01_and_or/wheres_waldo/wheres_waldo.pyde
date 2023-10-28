@@ -27,10 +27,10 @@ def draw():
     # *Hint* use the mousePressed variable
     if mousePressed and mouseX > 200 and mouseX < 230 and mouseY > 340 and mouseY < 390:
         print("Waldo found!")
-        text("Waldo found!")
-    else:
+
+    elif mousePressed:
         print("Not here!")
-        text("Not here!")
+        
         # Use this print statement to help you find the location
         # of Waldo to use in the code below
     

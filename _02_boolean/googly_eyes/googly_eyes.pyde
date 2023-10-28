@@ -10,30 +10,31 @@ You’re going to draw a face with eyes that will follow the mouse!
 def setup():
     # 2. Import your image using the following code:
     #global face
+    global face
     face = loadImage("big eyes.jpeg")
 
     
     # 3. Set the size of your sketch and the size of your image to be
     # the same by entering the following code in the setup method.
-    size(800, 800)
+    size(600, 900)
     face.resize(width, height)
 
     
 def draw():
     # 4. Draw your image using:
-    global face
     background(face)
 
     # 5. Place a white circle over the left eye of your image.
     # *HINT* The current position of the mouse is printed to the
     # console. Use it to find the center of the left eye.
     # fill(<your color>)
-    # circle(x, y, diameter)
+    circle(230, 200, 250)
+
     println(str(mouseX) + ' ' + str(mouseY))
-    
+    draw_googly_eye(230, 200, 250, 10)
     # 6. Call the draw_gooly_eye function with the correct input parameters to draw
     # the pupil insdie the eye. Does it stay inside the eye and follow the mouse?
-    
+
     # 7. Repeat the steps above for the right eye and observe the googly eyes!
 
 # ======================= DO NOT MODIFY THE CODE BELOW ==========================
