@@ -12,16 +12,22 @@ if __name__ == '__main__':
     #  3.1415926535897932384
     pi = (str(3.1415926535897932384))
     # TODO) Print out the first 3 digits of pi. For example,
-    print(pi[0])
-    print(pi[1])
-    print(pi[2])
-    print(pi[3])
+    score = 0
+    for i in range(15):
+        g = pi[i]
+        q = simpledialog.askstring(None, prompt="what is the next digit of pi?")
+        if q == g:
+            print("correct")
+            score = score + 1
+        else:
+            print("incorrect")
+    messagebox.showinfo(None, message="You got "+(str(score))+" digits of pi correct!")
 
     #  pi_str[1]   # second digit
 
     # TODO) Use a while loop to keep asking for the next digit of pi
-    while True:
-        simpledialog.askinteger(None, prompt="what is the next digit of pi?")
+
+
         # TODO) If they are correct, print "correct".
         #  If they are not, print "incorrect" and break out of the while loop
 
