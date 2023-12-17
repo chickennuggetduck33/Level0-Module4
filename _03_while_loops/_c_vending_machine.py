@@ -56,5 +56,6 @@ if __name__ == '__main__':
     #  congratulates the user because they maximized their money.
         if money_in_dollars == 0:
             messagebox.showinfo(None, message="you maximized your money!")
+            break
     # TODO) If there is a negative amount of money, tell the user they
     #  overspent!
